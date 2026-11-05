@@ -4,7 +4,7 @@ Jogo desenvolvido como atividade de programação web, utilizando **HTML, CSS e 
 
 O objetivo é descobrir uma palavra de **5 letras** em até **6 tentativas**. A cada tentativa, as cores das letras ajudam a encontrar a resposta.
 
-> **Conteúdo deste repositório:** esta publicação contém a documentação. O código-fonte e os testes estão no pacote `termo.zip` entregue junto à atividade e ainda precisam ser adicionados ao repositório. As instruções abaixo descrevem essa implementação.
+Este repositório contém o código-fonte completo, os testes e a documentação do jogo.
 
 ## Objetivo da atividade
 
@@ -88,7 +88,7 @@ O jogo não utiliza framework, banco de dados, backend ou dependências de execu
 
 ## Organização dos arquivos do jogo
 
-Após extrair o pacote da atividade, a estrutura é:
+A estrutura do repositório é:
 
 ```text
 termo/
@@ -110,9 +110,18 @@ termo/
 
 ## Como executar localmente
 
+Clone o repositório e entre na pasta do projeto:
+
+```bash
+git clone https://github.com/EduDrozdz/Termo.git
+cd Termo
+```
+
+Se preferir, use **Code → Download ZIP** no GitHub e extraia os arquivos.
+
 ### Opção 1 — abrir diretamente
 
-1. Extraia o pacote `termo.zip` da atividade.
+1. Acesse a pasta do projeto clonado ou extraído.
 2. Abra a pasta `dist`.
 3. Abra `index.html` em um navegador moderno.
 

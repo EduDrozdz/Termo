@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Um jogo de palavras em português. Descubra a palavra em seis tentativas.">
+  <title>Termo · Letra a letra</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./">termo<span>.</span></a><span class="edition">UM JOGO DE DESCOBERTAS</span><button id="help" class="help" aria-label="Como jogar">?</button></header>
+  <main>
+    <div class="eyebrow"><span></span> LETRA A LETRA</div>
+    <h1>Uma palavra.<br>Seis possibilidades.</h1>
+    <p class="intro">Siga as pistas e encontre a palavra escondida.</p>
+    <div class="controls"><button class="restart" id="restart" title="Começar outra partida">↻ <span>Novo jogo</span></button></div>
+    <div class="board-meta"><span id="round">TENTATIVA 1 DE 6</span><span id="size">5 LETRAS</span></div>
+    <div id="board" class="board" role="group" aria-label="Tabuleiro de tentativas"></div>
+    <div id="message" class="message" role="status" aria-live="polite">Comece com uma palavra de 5 letras.</div>
+    <div id="keyboard" class="keyboard" role="group" aria-label="Teclado virtual"></div>
+    <div class="legend"><span><i class="correct"></i>Posição certa</span><span><i class="present"></i>Posição errada</span><span><i class="absent"></i>Não aparece*</span></div>
+    <p class="footnote">* Ou já foram indicadas todas as ocorrências dessa letra.</p>
+  </main>
+  <footer>Um pouco de lógica. Um pouco de intuição.<span>FEITO PARA QUEM GOSTA DE PALAVRAS</span></footer>
+  <dialog id="instructions"><button id="close-help" class="close" aria-label="Fechar instruções">×</button><div class="eyebrow">AS REGRAS SÃO SIMPLES</div><h2>Cada letra é uma pista.</h2><p>Descubra a palavra em até <strong>6 tentativas</strong>. Todas as palavras têm 5 letras.</p><ul><li><strong>Verde:</strong> letra na posição correta.</li><li><strong>Amarelo:</strong> letra na palavra, mas em outra posição.</li><li><strong>Cinza:</strong> letra ausente, ou sem mais ocorrências disponíveis.</li></ul><p>Digite pelo teclado ou toque nas letras. Use <strong>Enter</strong> para enviar e <strong>⌫</strong> para apagar. Acentos e cedilha são convertidos: MAÇÃ vira MACA.</p><p>Esta versão aceita qualquer sequência de letras com 5 letras. Ao acertar ou esgotar as tentativas, a resposta é revelada. “Novo jogo” começa outra partida.</p></dialog>
+</body>
+</html>
